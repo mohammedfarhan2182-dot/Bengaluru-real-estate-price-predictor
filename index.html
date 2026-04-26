@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bengaluru Price Predictor</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Chart.js for graph -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🏢 Bengaluru Price Predictor</h1>
+
+  <!-- User Inputs -->
+  <input type="number" id="sqft" placeholder="Total Sqft">
+  <input type="number" id="bath" placeholder="Bathrooms">
+  <input type="number" id="bhk" placeholder="BHK">
+
+  <!-- Location dropdown (dynamic) -->
+  <select id="location"></select>
+
+  <!-- Button -->
+  <button onclick="predictPrice()">Predict Price</button>
+
+  <!-- Result -->
+  <h2 id="result"></h2>
+
+  <!-- Chart -->
+  <canvas id="priceChart"></canvas>
+
+  <!-- History -->
+  <h3>📜 Prediction History</h3>
+  <ul id="history"></ul>
+
+</div>
+
+<!-- Link JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

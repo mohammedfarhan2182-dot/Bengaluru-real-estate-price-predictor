@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI';
+  margin: 0;
+  height: 100vh;
+
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2');
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #019875;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#history {
+  text-align: left;
+}
